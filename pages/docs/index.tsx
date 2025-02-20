@@ -1,6 +1,7 @@
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import {Form, Input, Button} from "@heroui/react";
+import { Home, Mail, Phone } from "lucide-react";
 import React, { useState } from "react";
 
 export default function DocsPage() {
@@ -41,9 +42,42 @@ export default function DocsPage() {
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Contact Us</h1>
-          <Form onSubmit={onSubmit}>
+          <div className="container mx-auto">
+        <h2 className="mb-12 text-center text-3xl font-bold tracking-[0.2em] text-white sm:text-4xl">GET IN TOUCH</h2>
+        <div className="grid gap-8 sm:grid-cols-3">
+          {/* Phone */}
+          <div className="flex items-center justify-center gap-4">
+            <Phone className="h-6 w-6" />
+            <div>
+              <div className="text-sm font-medium">Phone</div>
+              <div className="text-sm opacity-90">+4917624252364</div>
+            </div>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-center justify-center gap-4">
+            <Mail className="h-6 w-6" />
+            <div>
+              <div className="text-sm font-medium">E-Mail</div>
+              <div className="text-sm opacity-90">@ebex@inbox.lv</div>
+            </div>
+          </div>
+
+          {/* Address */}
+          <div className="flex items-center justify-center gap-4">
+            <Home className="h-6 w-6" />
+            <div>
+              <div className="text-sm font-medium">Address</div>
+              <div className="text-sm opacity-90">123 Anywhere St., Any City</div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div className="mt-8 mb-8">
+            <Form onSubmit={onSubmit}>
             {/* Name Input */}
             <Input
+              className="mt-5 mb-5"
               isRequired
               label="Name"
               labelPlacement="outside"
@@ -56,6 +90,7 @@ export default function DocsPage() {
             />
             {/* Email Input */}
             <Input
+              className="mt-5 mb-5"
               isRequired
               label="Email"
               labelPlacement="outside"
@@ -68,6 +103,7 @@ export default function DocsPage() {
             {/* Message Input */}
             <Input
               isRequired
+              className="mt-5 mb-5"
               label="Message"
               labelPlacement="outside"
               name="message"
@@ -81,10 +117,12 @@ export default function DocsPage() {
             />
 
             {/* Submit Button */}
-            <Button type="submit" variant="bordered">
+            <Button className="mt-6 mb-6" type="submit" variant="bordered">
               Submit
             </Button>
           </Form>
+          </div>
+          
         </div>
       </section>
     </DefaultLayout>
