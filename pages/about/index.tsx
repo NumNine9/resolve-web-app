@@ -34,7 +34,10 @@ export default function DocsPage() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={title()}>About</h1>
+          <div className="mt-5 mb-5">
+            <h1 className={title()}>About</h1>
+          </div>
+          
           
           <h2>RESOLVE is an easy-to-use software, which assists schools, students, parents, authors, real estate individuals, shops
           and more in creating a better and easy way to get the best education ever. It makes it a cinch to the educational

@@ -43,36 +43,36 @@ export default function DocsPage() {
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Contact Us</h1>
           <div className="container mx-auto">
-        <h2 className="mb-12 text-center text-3xl font-bold tracking-[0.2em] text-white sm:text-4xl">GET IN TOUCH</h2>
-        <div className="grid gap-8 sm:grid-cols-3">
-          {/* Phone */}
-          <div className="flex items-center justify-center gap-4">
-            <Phone className="h-6 w-6" />
-            <div>
-              <div className="text-sm font-medium">Phone</div>
-              <div className="text-sm opacity-90">+4917624252364</div>
-            </div>
-          </div>
+            <h2 className="text-center text-3xl font-bold tracking-[0.2em] text-white sm:text-4xl">GET IN TOUCH</h2>
+            <div className="grid gap-8 sm:grid-cols-3">
+              {/* Phone */}
+              <div className="flex items-center justify-center gap-4">
+                <Phone className="h-6 w-6" />
+                <div>
+                  <div className="text-sm font-medium">Phone</div>
+                  <div className="text-sm opacity-90">+4917624252364</div>
+                </div>
+              </div>
 
-          {/* Email */}
-          <div className="flex items-center justify-center gap-4">
-            <Mail className="h-6 w-6" />
-            <div>
-              <div className="text-sm font-medium">E-Mail</div>
-              <div className="text-sm opacity-90">@ebex@inbox.lv</div>
-            </div>
-          </div>
+              {/* Email */}
+              <div className="flex items-center justify-center gap-4">
+                <Mail className="h-6 w-6" />
+                <div>
+                  <div className="text-sm font-medium">E-Mail</div>
+                  <div className="text-sm opacity-90">@ebex@inbox.lv</div>
+                </div>
+              </div>
 
-          {/* Address */}
-          <div className="flex items-center justify-center gap-4">
-            <Home className="h-6 w-6" />
-            <div>
-              <div className="text-sm font-medium">Address</div>
-              <div className="text-sm opacity-90">123 Anywhere St., Any City</div>
+              {/* Address */}
+              <div className="flex items-center justify-center gap-4">
+                <Home className="h-6 w-6" />
+                <div>
+                  <div className="text-sm font-medium">Address</div>
+                  <div className="text-sm opacity-90">123 Anywhere St., Any City</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
           <div className="mt-8 mb-8">
             <Form onSubmit={onSubmit}>
             {/* Name Input */}
