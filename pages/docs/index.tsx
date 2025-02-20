@@ -3,6 +3,7 @@ import DefaultLayout from "@/layouts/default";
 import {Form, Input, Button} from "@heroui/react";
 import { Home, Mail, Phone } from "lucide-react";
 import React, { useState } from "react";
+// import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 export default function DocsPage() {
   const [name, setName] = useState<string>('');
