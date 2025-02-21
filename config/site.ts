@@ -13,9 +13,22 @@ export const siteConfig = {
       href: "/about",
     },
     {
+      label: "FAQs",
+      href: "/faqs",
+    },
+    {
       label: "Contact Us",
       href: "/docs",
     },
+    // {
+    //   label: "Login",
+    //   href: "/loginn",
+    // },
+    // {
+    //   label: "DashBoard",
+    //   href: "/userDashboard",
+    // },
+    
     // {
     //   label: "Pricing",
     //   href: "/pricing",
@@ -40,6 +53,14 @@ export const siteConfig = {
       href: "/docs",
     },
     // {
+    //   label: "DashBoard",
+    //   href: "/user-dashboard",
+    // },
+    {
+      label: "FAQs",
+      href: "/faqs",
+    },
+    // // {
     //   label: "Profile",
     //   href: "/profile",
     // },
