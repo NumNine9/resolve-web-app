@@ -96,6 +96,7 @@ export const Navbar = () => {
           <Button
             isExternal
             as={Link}
+            href="/signup"
             className="text-sm font-normal text-default-600 bg-default-100"
             // href={siteConfig.links.sponsor}
             // startContent={<HeartFilledIcon className="text-danger" />}
