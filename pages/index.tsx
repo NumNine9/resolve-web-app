@@ -11,6 +11,8 @@ import openSaasBannerWebp from '../public/image.jpeg';
 import { Image } from "@heroui/react";
 // import { Link } from "lucide-react";
 import { Button } from "@heroui/button";
+import { siteConfig } from "@/config/site";
+import { Link } from "@heroui/link";
 export default function IndexPage() {
   const categories = [
     { title: "SCHOOLS", href: "/schools" },
@@ -184,9 +186,9 @@ export default function IndexPage() {
                  Get Started <span aria-hidden='true'> →</span>
                  </div> */}
                  <div className="whitespace-nowrap pt-2 sm:pt-0 grid sm:block">
-               <a className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-yellow-400 text-black hover:bg-yellow-300 hover:text-black focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
+                 <Link href={'/signup'} className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-yellow-400 text-black hover:bg-yellow-300 hover:text-black focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
                  Get started
-               </a>
+               </Link>
              </div>
                   
                   
