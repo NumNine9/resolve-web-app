@@ -20,10 +20,10 @@ export const siteConfig = {
       label: "Contact Us",
       href: "/docs",
     },
-    {
-      label: "Signup",
-      href: "/signup",
-    },
+    // {
+    //   label: "Signup",
+    //   href: "/signup",
+    // },
     // {
     //   label: "Login",
     //   href: "/loginn",

@@ -29,11 +29,12 @@ export default function Signup(){
           e.preventDefault();
           if (error) {
             setError(error.message);
+            alert(error.message)
             console.log(error.message);
           } else {
             alert("Check your email for confirmation!");
             console.log('You have created an account in!')
-            router.push("/");
+            router.push("/loginn");
           }
           e.preventDefault();
     }else{
@@ -49,7 +50,7 @@ export default function Signup(){
       } else {
         alert("Welcome back!");
         console.log('You have signed in!')
-        router.push('/about')
+        router.push('/loginn')
       }
       e.preventDefault();
 
@@ -91,12 +92,12 @@ export default function Signup(){
               isSignUp  ? (
                 <div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl font-bold">Sign Up</h1>
-                <p className="text-balance text-muted-foreground mt-3">Get a Acme Inc account now!</p>
+                <p className="text-balance text-muted-foreground mt-3">Get a Resolve account now!</p>
               </div>) 
               :
               (<div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl font-bold">Welcome back</h1>
-                <p className="text-balance text-muted-foreground mt-3">Login to your Acme Inc account</p>
+                <p className="text-balance text-muted-foreground mt-3">Login to your Resolve account</p>
               </div>)
               }
               <div className="grid gap-2">
