@@ -6,16 +6,22 @@ import { useRouter } from "next/router";
 
 import { fontSans, fontMono } from "@/config/fonts";
 import "@/styles/globals.css";
+import { AuthProvider } from "@/utils/supabase/AuthProvider";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
-    <HeroUIProvider navigate={router.push}>
-      <NextThemesProvider>
-        <Component {...pageProps} />
-      </NextThemesProvider>
-    </HeroUIProvider>
+    
+      <HeroUIProvider navigate={router.push}>
+        <AuthProvider>
+        <NextThemesProvider>
+          <Component {...pageProps} />
+        </NextThemesProvider>
+        </AuthProvider>
+      </HeroUIProvider>
+    
+    
   );
 }
 

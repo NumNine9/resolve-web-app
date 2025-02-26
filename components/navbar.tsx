@@ -25,8 +25,28 @@ import {
   SearchIcon,
   Logo,
 } from "@/components/icons";
+import { supabase, useAuth } from "@/utils/supabase/client";
+import { useRouter } from "next/router";
 
 export const Navbar = () => {
+  const router = useRouter();
+  const { user, isLoading } = useAuth();
+  const handleSignOut = async () => {
+    try {
+      const { error } = await supabase.auth.signOut();
+      if (error) {
+        console.error('Error signing out:', error.message);
+      } else {
+        console.log('User signed out successfully');
+        alert('User signed out successfully');
+        router.push('./')
+        // Optionally, you can redirect the user to the login page or home page
+      }
+    } catch (error) {
+      console.error('Unexpected error signing out:', error);
+    }
+  };
+ 
   const searchInput = (
     <Input
       aria-label="Search"
@@ -102,8 +122,21 @@ export const Navbar = () => {
             // startContent={<HeartFilledIcon className="text-danger" />}
             variant="flat"
           >
-            Sign In
+            {user? user.email :'Sign In'}
           </Button>
+          { user  ? 
+          <Button
+          // isExternal
+          onPress={()=>handleSignOut()}
+          // href="/signup"
+          className="text-sm font-normal text-default-600 bg-default-100 ml-3"
+          // href={siteConfig.links.sponsor}
+          // startContent={<HeartFilledIcon className="text-danger" />}
+          // variant="flat"
+        >
+          Sign Out
+        </Button>
+          : ''}
         </NavbarItem>
       </NavbarContent>
 
