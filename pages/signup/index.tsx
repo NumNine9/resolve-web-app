@@ -12,7 +12,7 @@ export default function Signup(){
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isSignUp , setSignin] = useState(false)
+  const [isSignUp , setSignin] = useState<boolean>(true)
   const router = useRouter();
 
   const handleUser = async (e: React.FormEvent) => {
@@ -46,6 +46,7 @@ export default function Signup(){
       e.preventDefault();
       if (error) {
         setError(error.message);
+        alert(error.message)
         console.log(error.message);
       } else {
         alert("Welcome back!");
