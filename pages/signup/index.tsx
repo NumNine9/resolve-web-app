@@ -34,7 +34,7 @@ export default function Signup(){
           } else {
             alert("Check your email for confirmation!");
             console.log('You have created an account in!')
-            router.push("/loginn");
+            router.push("/home");
           }
           e.preventDefault();
     }else{
@@ -51,7 +51,7 @@ export default function Signup(){
       } else {
         alert("Welcome back!");
         console.log('You have signed in!')
-        router.push('/loginn')
+        router.push('/home')
       }
       e.preventDefault();
 
