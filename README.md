@@ -1,6 +1,6 @@
-# Next.js & HeroUI Template
+# Next.js & HeroUI Project
 
-This is a template for creating applications using Next.js 14 (pages directory) and HeroUI (v2).
+This is an application built using Next.js 14 (pages directory) and HeroUI (v2).
 
 [Try it on CodeSandbox](https://githubbox.com/heroui-inc/next-pages-template)
 
@@ -17,14 +17,6 @@ This is a template for creating applications using Next.js 14 (pages directory) 
 - [TypeScript](https://www.typescriptlang.org)
 - [Framer Motion](https://www.framer.com/motion)
 - [next-themes](https://github.com/pacocoursey/next-themes)
-
-## How to Use
-
-To create a new project based on this template using `create-next-app`, run the following command:
-
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-pages-template
-```
 
 ### Install dependencies
 
