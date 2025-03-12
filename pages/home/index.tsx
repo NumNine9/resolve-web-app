@@ -90,14 +90,14 @@ export default function DocsPage() {
           <div className="space-y-6">
             <h2 className="text-2xl font-bold tracking-widest text-white">CATEGORIES:</h2>
             <div className="grid gap-6 sm:grid-cols-2">
-              {categories.map((category) => (
+              {categories?.map((category) => (
                 <div
-                  key={category.title}
+                  key={category?.title}
                   // href={category.href}
                   className="block rounded-3xl bg-white p-8 text-center text-lg font-semibold text-[#0A1257] transition-transform hover:scale-105"
                 >
                   <Link href="/dashboard">
-                  {category.title}
+                  {category?.title}
                   </Link>
                   
                 </div>
