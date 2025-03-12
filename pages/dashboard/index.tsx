@@ -5,6 +5,9 @@ import { Inter } from "next/font/google"
 import { SidebarProvider, SidebarTrigger, SidebarInset } from "@/components/ui/sidebar"
 import { DashboardSidebar } from "@/components/dashboard-sidebar"
 import Dashboard from "./page"
+import { supabase, useAuth } from "@/utils/supabase/client";
+import { useRouter } from "next/router";
+import { Button } from "@heroui/button"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -18,6 +21,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const router = useRouter();
+  // const { user, isLoading } = useAuth();
+  const handleSignOut = async () => {
+      try {
+        const { error } = await supabase.auth.signOut();
+        if (error) {
+          console.error('Error signing out:', error.message);
+        } else {
+          console.log('User signed out successfully');
+          alert('User signed out successfully');
+          router.push('/')
+          // Optionally, you can redirect the user to the login page or home page
+        }
+      } catch (error) {
+        console.error('Unexpected error signing out:', error);
+      }
+    };
   return (
       <div className="bg-[#3a3f61]">
         <SidebarProvider>
@@ -26,6 +46,17 @@ export default function RootLayout({
             <header className="flex h-16 items-center border-b border-[#3a3f61] bg-[#5c6499] px-4 w-full z-10">
               <SidebarTrigger className="mr-4" />
               <div className="ml-auto flex items-center gap-4 bg-[#5c6499]">
+              <Button
+          // isExternal
+          onPress={()=>handleSignOut()}
+          // href="/signup"
+          className="text-sm font-normal text-default-600 bg-default-100 ml-3"
+          // href={siteConfig.links.sponsor}
+          // startContent={<HeartFilledIcon className="text-danger" />}
+          // variant="flat"
+        >
+          Sign Out
+        </Button>
                 <button className="flex h-8 w-8 items-center justify-center rounded-full bg-[#3a3f61]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

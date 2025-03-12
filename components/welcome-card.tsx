@@ -21,11 +21,11 @@ export function WelcomeCard({ name, taskCount }: WelcomeCardProps) {
 
         <div className="absolute right-0 top-0 h-full">
           <Image
-            src="/placeholder.svg?height=200&width=200"
+              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAIhABAQEAAQQCAgMAAAAAAAAAAAERITFBYXFRkYHwUqHh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDs8BYlSCpgLAoCc/AqAhnwqAm+Kp2IBvyvAAcns0kA4TlUAD+gFDfFUE1dQBdE+/oAqbVAQ1UAOgAuwxFAAAOFT8AAAbpDuAohwC8CRQRFoCJ+VwsAnsDkBU1dBO62L6TuCC2H4AEm0BQOQF0AKkgoIFAEVLoB+Yk1YBFRQAAQ+1ASwLoCgAAoHAk59KCUtEALBMBfpOq4dAJMBQNBICpqgILoB3MFBF0ABFBDgpnAGpfAbAIIugRUyrADVQDZ/ogChk+UBQk7LmdwRcAEFT2BidGkoJ6pt8UPIIu34hAAUANNAKbc7Jb5igguX+IAdCaYAACpT2uYCC378MgWJnlcMBFDjyAspACgZADAAE5AWkXEAVACm000DSh168eAQLP3QAzt2TlQFxP3DQVFMBFE79gXPKKAAAdwAIoAgAFQATOVQBoAA7ACVQBAAf/Z"
             alt="Student at desk illustration"
-            width={200}
-            height={200}
-            className="h-full w-auto object-contain"
+            width={50}
+            height={50}
+            className="object-contain"
           />
         </div>
       </div>

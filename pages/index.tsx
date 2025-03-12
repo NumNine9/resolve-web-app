@@ -147,7 +147,7 @@ export default function IndexPage() {
                </p>
 
                <div className="sm:flex sm:justify-center sm:items-center text-center sm:text-start">
-           <div className="shrink-0 pb-5 sm:flex sm:pb-0 sm:pe-5">
+           {/* <div className="shrink-0 pb-5 sm:flex sm:pb-0 sm:pe-5">
              
              <div className="flex justify-center -space-x-3 mt-6">
                <img className="inline-block size-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80" alt="Avatar"/>
@@ -159,19 +159,19 @@ export default function IndexPage() {
                </span>
              </div>
               
-           </div>
+           </div> */}
     
            <div className="border-t sm:border-t-0 sm:border-s border-gray-200 w-32 h-px sm:w-auto sm:h-full mx-auto sm:mx-0"></div>
-           {/* <div className='-m-2  flex justify-center rounded-xl lg:-m-4 lg:rounded-2xl lg:p-4'>
-              <Image
-                // src="https://media.istockphoto.com/id/1334063560/photo/african-americans-college-students-e-leaning-with-their-teacher-during-a-class.jpg?s=612x612&w=0&k=20&c=6ADofCPEBlGPK1MFGM44sfdCe9sjMzzzzK0MkZTcLw8="
-                alt='App screenshot'
-                width={400}
-                height={230}
-                loading='lazy'
-                className='rounded-md shadow-2xl ring-1 ring-gray-900/10'
-              />
-            </div> */}
+           <div className="m-2 flex justify-center rounded-xl lg:m-4 lg:rounded-2xl lg:p-4">
+  <Image
+    src="https://media.istockphoto.com/id/1334063560/photo/african-americans-college-students-e-leaning-with-their-teacher-during-a-class.jpg?s=612x612&w=0&k=20&c=6ADofCPEBlGPK1MFGM44sfdCe9sjMzzzzK0MkZTcLw8="
+    alt="App screenshot"
+    width={500}
+    height={300}
+    loading="lazy"
+    className="rounded-md shadow-2xl ring-1 ring-gray-900/10 w-full max-w-[300px] lg:max-w-[500px]"
+  />
+</div>
            {/* <div className="pt-5 sm:pt-0 sm:ps-5">
              <div className="text-lg font-semibold text-gray-800">Trust pilot</div>
              <div className="text-sm text-gray-500">Rated best over 37k reviews</div>
@@ -193,28 +193,7 @@ export default function IndexPage() {
                   
                   
                </div>
-             </div>
-          
-         
-        
-         {/* <form>
-           <div className="mx-auto max-w-2xl sm:flex sm:space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100">
-             <div className="w-full pb-2 sm:pb-0">
-               <label  className="block text-sm font-medium"><span className="sr-only">Your name</span></label>
-               <input type="text" id="hs-hero-name-1" className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Your name"/>
-             </div>
-             <div className="pt-2 sm:pt-0 sm:ps-3 border-t border-gray-200 sm:border-t-0 sm:border-s w-full">
-               <label  className="block text-sm font-medium"><span className="sr-only">Your email address</span></label>
-               <input type="email" id="hs-hero-email-1" className="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500" placeholder="Your name"/>
-             </div>
-             <div className="whitespace-nowrap pt-2 sm:pt-0 grid sm:block">
-               <a className="py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="#">
-                 Get started
-               </a>
-             </div>
-           </div>
-         </form> */}
-          
+             </div>     
     
           
          <div className="hidden absolute top-2/4 start-0 transform -translate-y-2/4 -translate-x-40 md:block lg:-translate-x-80" aria-hidden="true">
