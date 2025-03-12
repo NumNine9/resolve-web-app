@@ -1,5 +1,11 @@
 export type SiteConfig = typeof siteConfig;
-
+export const categories = [
+    { title: "SCHOOLS", href: "/schools" },
+    { title: "LIBARY", href: "/library" },
+    { title: "RENTALS", href: "/rentals" },
+    { title: "MARKET PLACE", href: "/marketplace" },,
+    { title: "DASHBOARD", href: "/dashboard" }
+  ]
 export const siteConfig = {
   name: "Resolve",
   description: "Make beautiful websites regardless of your design experience.",

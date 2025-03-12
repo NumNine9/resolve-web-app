@@ -4,14 +4,11 @@ import DefaultLayout from "@/layouts/default";
 import { Image } from "@heroui/react";
 // import { Link } from "lucide-react";
 import { Button } from "@heroui/button";
+import { categories } from "@/config/site";
+import { Link } from "@heroui/link";
 // import picS from '../../public/image.jpeg'
 export default function DocsPage() {
-  const categories = [
-    { title: "SCHOOLS", href: "/schools" },
-    { title: "LIBARY", href: "/library" },
-    { title: "RENTALS", href: "/rentals" },
-    { title: "MARKET PLACE", href: "/marketplace" },
-  ]
+ 
   return (
 <DefaultLayout>
       {/* <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -77,9 +74,8 @@ export default function DocsPage() {
               />
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">MAKING EDUCATION EASY</h1>
-            <div className="relative">
+            {/* <div className="relative">
               <p className="text-xl text-white">GET STARTED WITH US</p>
-              {/* <ArrowDown className="absolute -bottom-12 left-32 h-16 w-16 rotate-45 text-white" /> */}
             </div>
             <div className="pt-12">
               <Button
@@ -87,7 +83,7 @@ export default function DocsPage() {
               >
                 JOIN NOW!
               </Button>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Column */}
@@ -100,7 +96,10 @@ export default function DocsPage() {
                   // href={category.href}
                   className="block rounded-3xl bg-white p-8 text-center text-lg font-semibold text-[#0A1257] transition-transform hover:scale-105"
                 >
+                  <Link href="/dashboard">
                   {category.title}
+                  </Link>
+                  
                 </div>
               ))}
             </div>
